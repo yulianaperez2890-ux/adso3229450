@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Asistente">
+
+
+    <TextView
+        android:id="@+id/txtTituloAsistente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/planify_day_asistente_ia"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/nnn"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnIrTareas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mis_tareas"
+            android:layout_marginStart="6dp"
+            android:backgroundTint="#64748B"
+            android:textColor="#FFFF"/>
+
+        <Button
+            android:id="@+id/btnIrPerfil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mi_perfil"
+            android:layout_marginStart="6dp"
+            android:backgroundTint="#3B82F6"
+            android:textColor="#FFFF"/>
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtMensajeIA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ia_hola_soy_tu_asistente_de_planify_day_escribe_tus_pendientes_y_te_ayudo_a_organizar_tus_horarios_de_hoy"
+                android:textSize="15sp"
+                android:textColor="#0F172A"
+                android:background="#E2E8F0"
+                android:padding="12dp"
+                android:layout_marginBottom="10dp"/>
+            
+            <TextView
+                android:id="@+id/txtHistorialChat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#334155"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtMensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/escribe_tu_consulta_aqui"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enviar"
+            android:backgroundTint="#10B981"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+</LinearLayout>
