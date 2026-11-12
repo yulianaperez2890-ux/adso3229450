@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">Planify_Day</string>
+    <string name="planify_day_asistente_ia">Planify Day - Asistente IA</string>
+    <string name="mi_perfil">Mi Perfil</string>
+    <string name="mis_tareas">Mis Tareas</string>
+    <string name="ia_hola_soy_tu_asistente_de_planify_day_escribe_tus_pendientes_y_te_ayudo_a_organizar_tus_horarios_de_hoy">IA: Hola! Soy tu asistente de Planify Day. Escribe tus pendientes y te ayudo a organizar tus horarios de hoy.</string>
+    <string name="escribe_tu_consulta_aqui">Escribe tu consulta aqui...</string>
+    <string name="enviar">Enviar</string>
+    <string name="planify_day_mis_tareas">Planify Day - Mis Tareas</string>
+    <string name="asistente_ia">Asistente IA</string>
+    <string name="pendientes">Pendientes</string>
+    <string name="completadas">Completadas</string>
+    <string name="estudiar_desarrollo_m_vil">Estudiar desarrollo móvil</string>
+    <string name="prioridad_alta">Prioridad: Alta</string>
+    <string name="entregar_taller_de_m_todos">Entregar taller de métodos</string>
+    <string name="prioridad_media_completada">Prioridad: Media (Completada)</string>
+    <string name="escribe_una_nueva_tarea">Escribe una nueva tarea...</string>
+    <string name="agregar">Agregar</string>
+    <string name="planify_day_mi_perfil">Planify Day - Mi Perfil</string>
+    <string name="jh">JH</string>
+    <string name="juan_manuel">Juan Manuel</string>
+    <string name="aprendiz_adso_sena_edu_co">aprendiz.adso@sena.edu.co</string>
+    <string name="configuraci_n">Configuración</string>
+    <string name="activar_notificaciones">Activar Notificaciones</string>
+    <string name="cambiar_tema_oscuro_claro">Cambiar Tema (Oscuro/Claro)</string>
+    <string name="guardar_cambios">Guardar Cambios</string>
 </resources>

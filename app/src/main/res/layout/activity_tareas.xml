@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Tareas">
+
+    <TextView
+        android:id="@+id/txtTituloTareas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/planify_day_mis_tareas"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnIrAsistente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/asistente_ia"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="#3B82F6"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnIrPerfil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mi_perfil"
+            android:layout_marginStart="6dp"
+            android:backgroundTint="#64748B"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnFiltroPendientes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pendientes"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="#F59E0B"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnFiltroCompletadas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/completadas"
+            android:textSize="12sp"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#10B981"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/chkTarea1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/txtNombreTarea1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/estudiar_desarrollo_m_vil"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#0F172A"/>
+
+                    <TextView
+                        android:id="@+id/txtPrioridadTarea1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prioridad_alta"
+                        android:textSize="13sp"
+                        android:textColor="#EF4444"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/chkTarea2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <TextView
+                        android:id="@+id/txtNombreTarea2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/entregar_taller_de_m_todos"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="#0F172A"/>
+
+                    <TextView
+                        android:id="@+id/txtPrioridadTarea2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/prioridad_media_completada"
+                        android:textSize="13sp"
+                        android:textColor="#10B981"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/txtNuevaTareaAgregada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp"
+                android:textColor="#334155"
+                android:padding="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtNuevaTarea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/escribe_una_nueva_tarea"
+            android:padding="12dp"
+            android:background="#FFFFFF"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/btnAgregarTarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agregar"
+            android:backgroundTint="#3B82F6"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</LinearLayout>

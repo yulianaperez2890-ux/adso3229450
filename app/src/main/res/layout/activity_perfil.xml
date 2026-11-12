@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil">
+
+
+    <TextView
+        android:id="@+id/txtTituloPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/planify_day_mi_perfil"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#1E293B"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/btnIrAsistente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/asistente_ia"
+            android:layout_marginEnd="6dp"
+            android:backgroundTint="#3B82F6"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/btnIrTareas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/mis_tareas"
+            android:layout_marginStart="6dp"
+            android:backgroundTint="#64748B"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp">
+
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:text="@string/jh"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="#3B82F6"
+            android:gravity="center"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:id="@+id/txtNombreUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/juan_manuel"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#0F172A"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/txtCorreoUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aprendiz_adso_sena_edu_co"
+            android:textSize="14sp"
+            android:textColor="#64748B"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/configuraci_n"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="12dp"/>
+
+        <Button
+            android:id="@+id/btnNotificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activar_notificaciones"
+            android:backgroundTint="#E2E8F0"
+            android:textColor="#1E293B"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnTemaOscuro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cambiar_tema_oscuro_claro"
+            android:backgroundTint="#E2E8F0"
+            android:textColor="#1E293B"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnGuardarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar_cambios"
+        android:backgroundTint="#10B981"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"/>
+</LinearLayout>
