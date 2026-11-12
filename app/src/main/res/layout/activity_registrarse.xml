@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F8F5FF"
+    tools:context=".Registrarse">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/morado"/>
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="140dp"
+        android:layout_height="119dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Logo de Planify Day"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logotipo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crea tu cuenta en Planify Day"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/morado"/>
+
+    <EditText
+        android:id="@+id/edtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="Ingrese su nombre completo"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ingrese su correo electrónico"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ingrese un nombre de usuario"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edtContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Ingrese su contraseña"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/edtConfirmarContrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Confirme su contraseña"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/morado"
+        android:text="Registrarse"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/txtIniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="¿Ya tienes cuenta? Inicia sesión"
+        android:textSize="15sp"
+        android:textColor="@color/morado"/>
+
+</LinearLayout>
